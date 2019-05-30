@@ -1,0 +1,19 @@
+form.cookie_opt_in {
+    background:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-right: 30px;
+    margin: 0;
+    box-shadow: 0 -3px 5px 0px rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+form.cookie_opt_in p {
+    flex-grow: 1;
+    font-size: 20px;
+}
