@@ -13,7 +13,13 @@ form.cookie_opt_in {
     box-sizing: border-box;
 }
 
+@media(orientation:portrait) {
+    form.cookie_opt_in {
+        flex-direction: column;
+    }
+}
+
 form.cookie_opt_in p {
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 14px;
 }
