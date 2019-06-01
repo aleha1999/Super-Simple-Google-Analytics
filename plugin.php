@@ -77,8 +77,8 @@ function hook_header() {
         ?>
         <?php endif; ?>
         function gtag(){dataLayer.push(arguments);}
-        ga('set', 'anonymizeIp', true);
-        ga('set', 'allowAdFeatures', <?php echo isset($_COOKIE["cookie_opt_in"]) ? "false" : "true"; ?>);
+        gtag('set', 'anonymizeIp', true);
+        gtag('set', 'allowAdFeatures', <?php echo isset($_COOKIE["cookie_opt_in"]) ? "false" : "true"; ?>);
         gtag('js', new Date());
         gtag('config', '<?php echo $option; ?>');
         </script>
