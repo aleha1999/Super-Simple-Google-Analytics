@@ -122,7 +122,9 @@ function check_cookie() {
     if(isset($_GET["accept_cookie"]) && $_GET["accept_cookie"] == "true") {
         echo "HELLO";
         setcookie("cookie_opt_in","true",time()+60*60*30*6,"/");
-        header("location: ".$_SERVER["PHP_SELF"]);
+        $newpath = $_SERVER["REQUEST_URI"];
+        $newpath = str_replace("accept_cookie=true","",$newpath);
+        header("location: ".$newpath);
         exit();
     }
 }
